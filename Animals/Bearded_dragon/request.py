@@ -1,21 +1,13 @@
 from datetime import date
+from Animals.AnimalClass import Animal
 
-class Bearded_dragon:
+class Bearded_dragon(Animal):
 
-    def __init__(self, name, species, shift, chip_num):
-        self.date_added = date.today()
+    def __init__(self, name, species, food, shift, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.home = 'glass tank'
         self.walking = True
         self.shift = shift
-        self.name = name
-        self.species = species
-        self.__chip_number = chip_num
 
-    @property 
-    def chip_number(self):
-        return self.__chip_number 
 
-    @chip_number.setter 
-    def chip_number(self, number):
-        pass 
 

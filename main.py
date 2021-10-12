@@ -17,18 +17,23 @@ from Attractions import Wetlands, PettingZoo, SnakePit
 
 
 # slither_inn = SnakePit("Slither Inn")
+# jose = Cobra('Jose', 'cobra')
 # mike = King_snake("Mike", "king Snake", "other snakes")
 # dilbert = Komodo_dragon('Dilbert', 'dragon', 'cows')
-# slither_inn.animals.append(mike)
-# slither_inn.animals.append(dilbert)
+# slither_inn.add_animal(mike)
+# slither_inn.add_animal(dilbert)
+# slither_inn.add_animal(jose)
+
 
 # print(f'{slither_inn.attraction_name} is where you\'ll find reptiles of all types, like')
 # for animal in slither_inn.animals:
 #     print(f'-{animal.name} the {animal.species}')
 
+# print(slither_inn.last_critter_added)
 
-barbara = Bearded_dragon("Barbara", "lizard-thing", "afternoon", 808)
+jeff = Bearded_dragon('Jeff', 'lizard', 'popcorn', 'afternoon', 999)
 
-barbara.chip_number = 670
-
-print(barbara.chip_number)
+print(jeff.species)
+print(jeff.shift)
+print(jeff.chip_number)
+print(jeff.feed())
