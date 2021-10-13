@@ -4,5 +4,5 @@ class Flying:
         self.fly_speed = 0
         self.length = 0
 
-    def slither(self):
+    def fly(self):
         print("The animal flies")

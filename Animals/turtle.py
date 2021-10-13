@@ -14,5 +14,8 @@ class Turtle(Animal, Walking, Swimming):
     def feed(self):
         print(f'{self.name} the {self.species} prefers a glass of red wine with his {self.food} each evening')
 
+    def run(self):
+        print(f'{self} does not run he walks, slowly')
+
     def __str__(self):
-        return f'{self.name} is a {self.species}'
+        return f'{self.name} the {self.species}'

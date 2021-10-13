@@ -41,3 +41,4 @@ print(jeff.feed())
 clyde = Turtle('Clyde', 'turtle','steak tartar', 222)
 
 print(clyde.feed())
+clyde.run()
