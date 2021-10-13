@@ -1,14 +1,9 @@
-class SnakePit:
+from .attraction import Attraction
 
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "slithery and dithery creatures only"
-        self.animals = list()
+
+class SnakePit(Attraction):
+
+    def __init__(self, name, description):
+        super().__init__(name, description)
+
     
-    def add_animal(self, animal):
-        self.animals.append(animal)
-
-    @property
-    def last_critter_added(self):
-        last = self.animals[-1]
-        return f'{last.name}'

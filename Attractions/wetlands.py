@@ -1,6 +1,7 @@
-class Wetlands:
+from .attraction import Attraction
 
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "webbed feet and hydrophobic hides"
-        self.animals = list()
+
+class Wetlands(Attraction):
+
+    def __init__(self, name, description):
+        super().__init__(name, description)
