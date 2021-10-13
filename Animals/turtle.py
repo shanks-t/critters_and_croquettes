@@ -1,17 +1,18 @@
 from datetime import date
 from .animal import Animal
+from Movements import Walking, Swimming
 
 
-class Turtle:
+class Turtle(Animal, Walking, Swimming):
 
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, food, chip_num):
         self.home = 'pond'
-        self.walking = True
-        self.swimming = True
-        self.shift = shift
+        Animal.__init__(self, name, species, food, chip_num)
+        Walking.__init__(self)
+        Swimming.__init__(self)
 
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+        print(f'{self.name} the {self.species} prefers a glass of red wine with his {self.food} each evening')
 
     def __str__(self):
         return f'{self.name} is a {self.species}'

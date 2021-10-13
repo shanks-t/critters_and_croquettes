@@ -17,8 +17,8 @@ from Attractions import Wetlands, PettingZoo, SnakePit
 
 
 slither_inn = SnakePit("Slither Inn")
-jose = Cobra('Jose', 'cobra', 'spaghetti', 777)
-mike = King_snake("Mike", "king Snake", "other snakes", 666)
+jose = Cobra('Jose', 'cobra', 'spaghetti', 666)
+mike = King_snake("Mike", "king Snake", "other snakes", 777)
 
 
 slither_inn.add_animal(mike)
@@ -37,3 +37,7 @@ print(jeff.species)
 print(jeff.shift)
 print(jeff.chip_number)
 print(jeff.feed())
+
+clyde = Turtle('Clyde', 'turtle','steak tartar', 222)
+
+print(clyde.feed())
