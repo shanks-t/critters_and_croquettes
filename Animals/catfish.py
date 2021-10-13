@@ -1,10 +1,14 @@
 from datetime import date
 from .animal import Animal
+from Movements import Swimming
 
 
-class Catfish:
+class Catfish(Animal, Swimming):
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food, chip_num):
         self.home = 'pond'
-        self.swimming = True
-    
+        Animal.__init__(self, name, species, food, chip_num)
+        Swimming.__init__(self)
+
+    def __str__(self):
+        return f'{self.name} the {self.species}'

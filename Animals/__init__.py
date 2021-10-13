@@ -11,3 +11,5 @@ from .king_snake import King_snake
 from .iguana import Iguana
 from .llama import Llama
 from .turtle import Turtle
+from .falcon import Falcon
+from .mallard import Mallard

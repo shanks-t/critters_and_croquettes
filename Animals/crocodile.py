@@ -1,11 +1,15 @@
 from datetime import date
 from .animal import Animal
+from Movements import Walking, Swimming
 
 
-class Crocodile:
+class Crocodile(Animal, Walking, Swimming):
 
-    def __init__(self, name, species, food):
+    def __init__(self, name, species, food, chip_num):
         self.home = 'pond'
-        self.walking = True
-        self.swimming = True
- 
+        Animal.__init__(self, name, species, food, chip_num)
+        Walking.__init__(self)
+        Swimming.__init__(self)
+
+    def __str__(self):
+        return f'{self.name} the {self.species}'
